@@ -17,7 +17,7 @@
     "apns",
     "http2"
   ],
-  "author": "Harpreet Singh",
+  "author": "Harpreet Singh <harry.singh1064@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/harry1064/APNS2/issues"
