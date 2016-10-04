@@ -2,7 +2,7 @@
   "name": "apns-http2",
   "version": "1.0.0",
   "description": "This module provides wrapper to send push notification based on HTTP/2 protocol",
-  "main": "index.js",
+  "main": "lib/apns-http2.js",
   "dependencies": {
     "http2": ""
   },
