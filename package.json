@@ -1,0 +1,29 @@
+{
+  "name": "apns-http2",
+  "version": "1.0.2",
+  "description": "This module provides wrapper to send push notification based on HTTP/2 protocol",
+  "main": "lib/apns-http2.js",
+  "dependencies": {
+    "http2": ""
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/harry1064/APNS2.git"
+  },
+  "keywords": [
+    "apns",
+    "http2"
+  ],
+  "author": "Harpreet Singh <harry.singh1064@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harry1064/APNS2/issues"
+  },
+  "homepage": "https://github.com/harry1064/APNS2#readme"
+}
