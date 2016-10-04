@@ -6,6 +6,9 @@
   "dependencies": {
     "http2": ""
   },
+  "engines": {
+    "node": ">=6"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
