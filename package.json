@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "This module provides wrapper to send push notification based on HTTP/2 protocol",
   "main": "index.js",
+  "dependencies": {
+    "http2": ""
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
