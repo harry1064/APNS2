@@ -2,6 +2,10 @@
 
 > To use this library, node must be v6 or higher.
 
+### Installation
+
+> npm install apns-http2
+
 ### Create Client
 
 Client using .p12 and passphrase
