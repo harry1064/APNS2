@@ -26,7 +26,7 @@ const APNS = require('apns-http2');
 const fs = require('fs');
 const apnsClient = new APNS({
 	cert: fs.readFileSync('/path/to/Certificate.pem'),
-    key: '/path/to/key.pem',
+    key: fs.readFileSync('/path/to/key.pem'),
     apns_topic: 'com.yourapp.com'
 });
 ```
