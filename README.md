@@ -1,5 +1,5 @@
 # APNS2
-
+[![npm version](https://badge.fury.io/js/apns-http2.svg)](https://badge.fury.io/js/apns-http2)
 > To use this library, node must be v6 or higher.
 
 ### Installation
