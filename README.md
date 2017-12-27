@@ -13,9 +13,10 @@ Client using .p12 and passphrase
 const APNS = require('apns-http2');
 const fs = require('fs');
 const apnsClient = new APNS({
-	pfx: fs.readFileSync('/path/to/Certificates.p12'),
+    pfx: fs.readFileSync('/path/to/Certificates.p12'),
     passphrase: 'test',
-    apns_topic: 'com.yourapp.com'
+    apns_topic: 'com.yourapp.com',
+    production: false
 });
 ```
 
@@ -25,9 +26,10 @@ Client using cert and key in .pem extension
 const APNS = require('apns-http2');
 const fs = require('fs');
 const apnsClient = new APNS({
-	cert: fs.readFileSync('/path/to/Certificate.pem'),
+    cert: fs.readFileSync('/path/to/Certificate.pem'),
     key: fs.readFileSync('/path/to/key.pem'),
-    apns_topic: 'com.yourapp.com'
+    apns_topic: 'com.yourapp.com',
+    production: false
 });
 ```
 ### Sending Push Notification
@@ -45,17 +47,18 @@ const alert = {
         };
 const deviceToken = '00fc13adff785122b4ad28809a3420982341241421348097878e577c991de8f0';
 const options = {
-	'aps' : aps,
-	'alert' : alert,
-	'priority' : 10,
-	'expiration' : 0
+    'aps' : aps,
+    'alert' : alert,
+    'priority' : 10,
+    'expiration' : 0
 }
 const notification = new Notification(deviceToken, options);
 apnsClient.send(notification)
 .then((res) => {
-	console.log("response  " + res);
+    console.log("response:  ");
+    console.dir(res);
 }).catch((err) => {
-	console.log('APNS ERROR: ' + err);
+    console.log('APNS ERROR: ' + err);
 });
 ```
 #### Payload Example can be found here [Notification JSON payload examples](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/TheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH107-SW10)
